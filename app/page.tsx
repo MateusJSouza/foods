@@ -1,3 +1,9 @@
+import { Header } from './_components/header'
+
 export default function Home() {
-  return <p>Hello fsw</p>
+  return (
+    <div>
+      <Header />
+    </div>
+  )
 }
