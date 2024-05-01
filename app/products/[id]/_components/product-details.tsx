@@ -50,7 +50,7 @@ export function ProductDetails({
   }
 
   return (
-    <div className="py-5">
+    <div className="relative z-50 bg-white mt-[-1.5rem] py-5 rounded-tl-3xl rounded-tr-3xl">
       {/* RESTAURANTE */}
       <div className="flex items-center gap-[0.375rem] px-5">
         <div className="relative w-6 h-6">
