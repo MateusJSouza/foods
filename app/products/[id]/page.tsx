@@ -19,20 +19,23 @@ const ProductPage = async ({ params: { id } }: ProductPageProps) => {
     },
   })
 
+  if (!product) {
+    notFound()
+  }
+
   const juices = await db.product.findMany({
     where: {
       category: {
         name: 'Sucos',
+      },
+      restaurant: {
+        id: product?.restaurant.id,
       },
     },
     include: {
       restaurant: true,
     },
   })
-
-  if (!product) {
-    notFound()
-  }
 
   return (
     <div>
