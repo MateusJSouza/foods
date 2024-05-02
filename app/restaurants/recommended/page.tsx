@@ -12,7 +12,7 @@ const RecommendedRestaurants = async () => {
         <h2 className="mb-6 font-semibold text-lg">
           Restaurantes Recomendados
         </h2>
-        <div className="flex flex-col gap-6">
+        <div className="gap-6 grid grid-cols-2">
           {restaurants.map((restaurant) => (
             <RestaurantItem
               key={restaurant.id}
